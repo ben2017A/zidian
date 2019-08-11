@@ -1,7 +1,8 @@
 ﻿/*
- * zidian use
- * 2019-08-10
- * 
+ * zidian
+ * 2019-08-11
+ * https://github.com/netnr/zidian
+ * netnr
  */
 
 (function (window) {

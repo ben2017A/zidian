@@ -1,6 +1,6 @@
 {
   "name": "zidian",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "汉字、词语、成语查询接口",
   "main": "dist/zidian.js",
   "scripts": {
