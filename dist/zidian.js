@@ -1,4 +1,4 @@
-/*
+ï»¿/*
  * zidian use
  * 2019-08-10
  * 
@@ -28,7 +28,7 @@
             idiom: {},
             promise: {}
         },
-        //»ñÈ¡KYES
+        //è·å–KYES
         taskKeys: function (type) {
             return zidian.cache.promise[type] = new Promise(function (resolve) {
                 var keys = zidian.cache[type]["00"] || [];
@@ -42,7 +42,7 @@
                 }
             })
         },
-        //»ñÈ¡KEYµÄË÷ÒıÒ³
+        //è·å–KEYçš„ç´¢å¼•é¡µ
         taskItems: function (type, key) {
             return new Promise(function (resolve) {
                 (zidian.cache.promise[type] || zidian.taskKeys(type)).then(function (keys) {
@@ -65,7 +65,7 @@
                 })
             })
         },
-        //Ä£ºıËÑË÷´Ê
+        //æ¨¡ç³Šæœç´¢è¯
         likeCi: function (key) {
             return new Promise(function (resolve) {
                 var type = 'ci';
@@ -78,7 +78,7 @@
                 })
             })
         },
-        //Ä£ºıËÑË÷³ÉÓï
+        //æ¨¡ç³Šæœç´¢æˆè¯­
         likeIdiom: function (key) {
             return new Promise(function (resolve) {
                 var type = 'idiom';
@@ -91,19 +91,19 @@
                 })
             })
         },
-        //²éÑ¯×Ö
+        //æŸ¥è¯¢å­—
         equalWord: function (key) {
             return new Promise(function (resolve) {
                 zidian.taskItems('word', key).then(resolve)
             })
         },
-        //²éÑ¯´Ê
+        //æŸ¥è¯¢è¯
         equalCi: function (key) {
             return new Promise(function (resolve) {
                 zidian.taskItems('ci', key).then(resolve)
             })
         },
-        //²éÑ¯³ÉÓï
+        //æŸ¥è¯¢æˆè¯­
         equalIdiom: function (key) {
             return new Promise(function (resolve) {
                 zidian.taskItems('idiom', key).then(resolve)
