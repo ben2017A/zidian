@@ -14,6 +14,14 @@
 <script src="dist/zidian.js"></script>
 ```
 
+npm 安装
+```
+npm install zidian
+```
+
+查看：<https://unpkg.com/zidian/>
+
+
 汉字查询
 ```js
 zidian.equalWord(key)
